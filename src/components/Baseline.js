@@ -1,4 +1,4 @@
-function Header() {
+function Baseline() {
   return (
     <section className="baseline">
       <h1>Chez vous, partout et ailleurs</h1>
@@ -6,4 +6,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Baseline;
