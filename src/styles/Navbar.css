@@ -1,0 +1,23 @@
+.navbar a {
+  color: #FF6060;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar a:first-child {
+  margin-left: 0px;
+}
+
+.navbar a:hover, .navbar a.active {
+  text-decoration: underline
+}
+
+@media screen and (min-width: 768px) {
+  .navbar a {
+    font-size: 24px;
+    line-height: 34px;
+    margin-left: 50px;
+    text-transform: capitalize;
+  }
+}

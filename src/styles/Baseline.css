@@ -1,0 +1,64 @@
+.baseline {
+  position: relative;
+  margin: 0 20px;
+}
+
+.baseline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/bg-baseline.png') no-repeat center;
+  background-size: cover;
+  filter: brightness(0.6);
+  border-radius: 10px;
+}
+
+.baseline-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 240px;
+  padding: 30px 0 30px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .baseline {
+    display: flex;
+    align-items: center;
+    height: 225px;
+    max-width: 1240px;
+    margin: 0 20px;
+  }
+
+  .baseline::before {
+    border-radius: 25px;
+  }
+
+  .baseline-inside {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .baseline {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}

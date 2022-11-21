@@ -1,7 +1,11 @@
+import '../styles/Baseline.css';
+
 function Baseline() {
   return (
     <section className="baseline">
-      <h1>Chez vous, partout et ailleurs</h1>
+      <div className="baseline-inside">
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
     </section>
   );
 }

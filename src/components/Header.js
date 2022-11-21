@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../styles/Header.css';
 import logo from '../assets/logo.svg';
@@ -5,7 +6,10 @@ import logo from '../assets/logo.svg';
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Kasa" className="logo" />
+      <Link to="/">
+        <img src={logo} alt="Kasa" className="logo" />
+      </Link>
+
       <Navbar />
     </header>
   );

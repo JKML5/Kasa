@@ -1,0 +1,27 @@
+.rentals {
+  padding: 20px 20px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .rentals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rentals {
+    max-width: 1240px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 65px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+  }
+}

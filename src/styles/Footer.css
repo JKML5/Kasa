@@ -1,0 +1,12 @@
+.footer {
+  padding: 62px 0;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer .logo {
+  width: 122px;
+  filter:  brightness(0) invert(1);
+  margin-bottom: 25px;
+}

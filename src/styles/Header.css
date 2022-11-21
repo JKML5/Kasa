@@ -1,3 +1,24 @@
 .header {
-  color: red;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 0 20px;
+  }
+
+  .header .logo {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 40px 100px 60px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }

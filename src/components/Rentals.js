@@ -1,5 +1,6 @@
+import '../styles/Rentals.css';
 import rentals from '../data/rentals.json';
-import RentalsItem from './RentalsItem';
+import RentalsItem from './Rental';
 
 function Rentals() {
   return (
@@ -7,7 +8,9 @@ function Rentals() {
       {rentals.map((rental) => (
         <RentalsItem
           key={rental.id}
+          id={rental.id}
           title={rental.title}
+          imgSrc={rental.cover}
           rating={parseInt(rental.rating, 10)}
         />
       ))}
