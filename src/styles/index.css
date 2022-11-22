@@ -51,7 +51,7 @@ table {
 }
 
 /* Import Monserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -64,3 +64,14 @@ body {
   --tablet-breakpoint: 768px;
   --mobile-breakpoint: 413px;
 */
+
+.content {
+	padding: 0 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
