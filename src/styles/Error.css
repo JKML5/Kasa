@@ -1,0 +1,43 @@
+.error.content {
+  color: #FF6060;
+  height: 100%;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 125px 0;
+}
+
+.error h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.error h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 125px;
+}
+
+.error a {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #FF6060;
+}
+
+@media screen and (min-width: 768px) {
+  .error h1 {
+    font-size: 288px;
+  }
+
+  .error h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .error a {
+    font-size: 18px;
+  }
+}
