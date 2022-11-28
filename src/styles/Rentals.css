@@ -16,7 +16,6 @@
 
 @media screen and (min-width: 1440px) {
   .rentals {
-    max-width: 1240px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px 65px;
     padding: 50px;

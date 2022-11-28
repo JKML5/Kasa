@@ -1,0 +1,95 @@
+.rental-page {
+  color: #FF6060;
+  font-weight: 500;
+}
+
+.rental-page .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.rental-page .profile h1 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.rental-page .profile h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0 10px 0;
+}
+
+.rental-page .profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.rental-page .profile .left {
+  width: 100%;
+}
+
+.rental-page .profile .right {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 17px;
+  align-items: center;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .rental-page .profile {
+    flex-direction: row;
+  }
+
+  .rental-page .profile h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .rental-page .profile h2 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .rental-page .profile img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .rental-page .profile .right {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 26px;
+    width: 250px;
+  }
+  
+  .rental-page .collapsible-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rental-page .collapsible-section {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rental-page .profile h1 {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .rental-page .profile h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

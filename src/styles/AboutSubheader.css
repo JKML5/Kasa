@@ -13,7 +13,6 @@
 
 @media screen and (min-width: 1440px) {
   .aboutSubHeader {
-    max-width: 1240px;
-    margin: 0 auto 30px auto;
+    margin-bottom: 30px;
   }
 }

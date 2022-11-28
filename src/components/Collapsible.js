@@ -8,6 +8,13 @@ function Collapsible({ title, description }) {
     setOpen(!open);
   };
 
+  const properDesc = description.split('###').map((value) => (
+    <>
+      {value}
+      <br />
+    </>
+  ));
+
   return (
     <div className="collapsible-section">
       <button
@@ -17,7 +24,7 @@ function Collapsible({ title, description }) {
       >
         {title}
       </button>
-      {open && <div className="collapsible-content">{description}</div>}
+      {open && <div className="collapsible-content">{properDesc}</div>}
     </div>
   );
 }

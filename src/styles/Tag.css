@@ -1,0 +1,26 @@
+.tag {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #FF6060;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0 10px 10px 0;
+  padding: 3px 23px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .tag {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tag {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px 35px;
+    border-radius: 10px;
+  }
+}

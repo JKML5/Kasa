@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
+import '../styles/Rating.css';
 
 function Rating({ value }) {
   const range = [1, 2, 3, 4, 5];
 
   return (
-    <div>
+    <div className="ratings">
       {range.map((rangeElem) =>
-        value >= rangeElem ? <span key={rangeElem.toString()}>⭐</span> : null
+        value >= rangeElem ? (
+          <span className="rating" />
+        ) : (
+          <span className="rating inactive" />
+        )
       )}
     </div>
   );

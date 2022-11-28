@@ -49,6 +49,9 @@
 @media screen and (min-width: 1440px) {
   .collapsible-section {
     max-width: 1024px;
+  }
+  
+  .about .collapsible-section {
     margin: 0 auto 30px auto;
   }
   
@@ -65,8 +68,12 @@
     padding: 10px 0;
   }
 
-  .collapsible-content {
+  .about .collapsible-content {
     font-size: 24px;
     line-height: 34px;
+  }
+  .rental-page .collapsible-content {
+    font-size: 18px;
+    line-height: 26px;
   }
 }

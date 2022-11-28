@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Header />
-      <div className="content">
+      <div className="content about">
         <AboutSubheader />
         {datas.map((data) => (
           <Collapsible

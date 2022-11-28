@@ -1,0 +1,28 @@
+.rating {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('../assets/star.svg') no-repeat;
+  background-size: 15px;
+  margin-right: 5px;
+}
+.rating.inactive {
+  filter: grayscale(1) brightness(175%);
+}
+
+@media screen and (min-width: 768px) {
+  .ratings {
+    margin-top: 25px;
+  }
+
+  .rating {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    margin-right: 10px;
+  }
+
+  .rating:last-child {
+    margin-right: 0;
+  }
+}
