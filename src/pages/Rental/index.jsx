@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Collapsible from '../../components/Collapsible';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -13,6 +13,10 @@ function Rental() {
   const parems = useParams();
 
   const rental = rentals.filter((data) => data.id === parems.id).pop();
+
+  if (rental === undefined) {
+    return <Navigate to="/error404" />;
+  }
 
   return (
     <>
