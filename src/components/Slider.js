@@ -17,23 +17,35 @@ function Slider({ pictures }) {
     setCurrentSlideIndex(newIndex);
   };
 
-  return (
-    <div className="slider">
+  const pagination =
+    pictures.length > 1 ? (
       <div className="pagination">
         {currentSlideIndex + 1}/{pictures.length}
       </div>
-      <button
-        type="button"
-        className="slider-prev"
-        aria-label="Previous slide"
-        onClick={goToPrev}
-      />
-      <button
-        type="button"
-        className="slider-next"
-        aria-label="Next slide"
-        onClick={goToNext}
-      />
+    ) : null;
+
+  const buttons =
+    pictures.length > 1 ? (
+      <>
+        <button
+          type="button"
+          className="slider-prev"
+          aria-label="Previous slide"
+          onClick={goToPrev}
+        />
+        <button
+          type="button"
+          className="slider-next"
+          aria-label="Next slide"
+          onClick={goToNext}
+        />
+      </>
+    ) : null;
+
+  return (
+    <div className="slider">
+      {pagination}
+      {buttons}
       <img className="slide" src={pictures[currentSlideIndex]} alt="" />
     </div>
   );
