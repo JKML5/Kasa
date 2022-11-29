@@ -65,13 +65,19 @@ body {
   --mobile-breakpoint: 413px;
 */
 
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column; 
+}
 .content {
 	padding: 0 20px;
+	flex-grow: 1;
 }
 
 @media screen and (min-width: 1440px) {
   .content {
-    max-width: 1240px;
+    width: 1240px;
     margin: 0 auto;
 		padding: 0;
   }
