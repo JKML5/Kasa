@@ -2,16 +2,9 @@ import PropTypes from 'prop-types';
 import '../styles/Host.css';
 
 function Host({ name, picture }) {
-  const properName = name.split(' ').map((value) => (
-    <>
-      {value}
-      <br />
-    </>
-  ));
-
   return (
     <div className="host">
-      <div>{properName}</div>
+      <div>{name}</div>
       <img src={picture} alt="" />
     </div>
   );

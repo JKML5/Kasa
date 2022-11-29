@@ -2,18 +2,20 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import '../styles/Collapsible.css';
 
+function cleanDescription(description) {
+  const array = description.split('###');
+
+  if (array.length > 1) {
+    return array.map((value) => `${value}\n`);
+  }
+  return description;
+}
+
 function Collapsible({ title, description }) {
   const [open, setOpen] = useState(false);
   const toggle = () => {
     setOpen(!open);
   };
-
-  const properDesc = description.split('###').map((value) => (
-    <>
-      {value}
-      <br />
-    </>
-  ));
 
   return (
     <div className="collapsible-section">
@@ -24,7 +26,11 @@ function Collapsible({ title, description }) {
       >
         {title}
       </button>
-      {open && <div className="collapsible-content">{properDesc}</div>}
+      {open && (
+        <div className="collapsible-content">
+          {cleanDescription(description)}
+        </div>
+      )}
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Rental() {
             <h2>{rental.location}</h2>
             <div className="tags">
               {rental.tags.map((tag) => (
-                <Tag value={tag} />
+                <Tag key={`${tag}`} value={tag} />
               ))}
             </div>
           </div>

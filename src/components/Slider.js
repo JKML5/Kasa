@@ -43,7 +43,7 @@ function Slider({ pictures }) {
     ) : null;
 
   return (
-    <div className="slider">
+    <div key={currentSlideIndex} className="slider">
       {pagination}
       {buttons}
       <img className="slide" src={pictures[currentSlideIndex]} alt="" />

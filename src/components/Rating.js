@@ -8,9 +8,9 @@ function Rating({ value }) {
     <div className="ratings">
       {range.map((rangeElem) =>
         value >= rangeElem ? (
-          <span className="rating" />
+          <span key={rangeElem} className="rating" />
         ) : (
-          <span className="rating inactive" />
+          <span key={rangeElem} className="rating inactive" />
         )
       )}
     </div>
