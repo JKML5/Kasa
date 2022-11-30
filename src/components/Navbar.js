@@ -12,7 +12,7 @@ function Navbar() {
       </NavLink>
 
       <NavLink
-        to="a-propos"
+        to="/a-propos"
         className={({ isActive }) => (isActive ? 'active' : undefined)}
       >
         A propos
